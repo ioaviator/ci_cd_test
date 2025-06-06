@@ -25,11 +25,10 @@ jobs:
           
       - name: install package 
         run:
-          pip install black isort flake8
+          pip install black isort flake8 pytest
       
       - name: testing
-        run: |
-          pytest
+        run: pytest
       
       - name: Lint with flake8
         run: |
