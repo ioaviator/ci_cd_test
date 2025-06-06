@@ -32,8 +32,8 @@ jobs:
       
       - name: Format with black
         run: |
-          black ./main.py
+          black main.py
       
       - name: Lint with flake8
         run: |
-          flake8 ./main.py
+          flake8 main.py
