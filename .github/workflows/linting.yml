@@ -28,9 +28,12 @@ jobs:
           pip install black isort flake8
       
       - name: Format with black
+        run: pwd
+      
+      - name: Format with black
         run: |
-          black main.py
+          black ./main.py
       
       - name: Lint with flake8
         run: |
-          flake8 main.py
+          flake8 ./main.py
